@@ -1,0 +1,58 @@
+.aside{
+  width: 180px;
+  position: absolute;
+  margin-top: 1rem;
+  color: $greyText;
+  cursor: pointer;
+    &-menu{
+      list-style: none;
+      &__item{
+        margin-top: .4rem;
+        letter-spacing: 0.8px;
+        font-size: 1.1rem;
+      }
+      &__link{
+      &--active{
+          text-decoration: underline;
+        }
+      }
+    }
+    &-submenu{
+      margin-left: 1.3rem;
+      font-size: 0.8rem;
+      &__item{
+        text-decoration: none;
+        margin-top: .3rem;
+        list-style: none;
+        position: relative;
+      &:before{
+       content:"\2022";    /* escaped unicode character */
+       font-size:.9rem;    /* the default unicode bullet size is very small */
+       line-height:0;        /* kills huge line height on resized bullet */
+       position:absolute;  /* position bullet relative to list item */
+       top:.5rem;           /* vertical align bullet position relative to list item */
+       left:-.7rem;            /* position the bullet L- R relative to list item */
+      }
+      }
+      &__link{
+        &--active{
+          color: #000;
+          text-decoration: underline;
+          font-weight: 600;
+        }
+      }
+    }
+    .price-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6.8rem;
+      margin-left: .6rem;
+      &__description{
+        color: #000;
+        letter-spacing: .9px;
+        font-weight: 900;
+        font-size: 1.8rem;
+      }
+    }
+}

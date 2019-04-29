@@ -1,0 +1,12 @@
+@import 'breadcrumb';
+@import 'content';
+
+
+.main{
+  font-family: $mainFont;
+  max-width: 980px;
+  width: 100%;
+  padding: 0;
+  margin: 0.4rem auto 0;
+  padding-bottom: 220px;
+}

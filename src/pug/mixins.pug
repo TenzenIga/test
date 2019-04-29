@@ -1,0 +1,9 @@
+mixin product(desc, price)
+  .products__item.product
+    .product__img
+      img(src=require('../../static/img/product.png') alt='product')
+    p.product__description=desc
+    .product__info.info
+      span.info__price=price
+      span.info__cart
+        img(src=require('../../static/img/basket.png'))

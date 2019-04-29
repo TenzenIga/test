@@ -1,0 +1,25 @@
+.breadcrumb{
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: $greyText;
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline;
+  & + li:before{
+    color: $greyText;
+    content: " / ";
+    padding-right: 8px;
+    }
+    &:last-child{
+      a{
+      text-decoration: none;
+    }
+    }
+  }
+  &__link {
+    word-spacing: 1px;
+    text-decoration: underline;
+
+  }
+}

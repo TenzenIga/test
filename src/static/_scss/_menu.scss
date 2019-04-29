@@ -1,0 +1,22 @@
+.menu{
+    font-family: $mainFont;
+  display: flex;
+  background: $greyText;
+  color: #ffffff;
+  list-style: none;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  &__item{
+    font-size: 1.9rem;
+
+    & + &:before{
+      content: ' | ';
+      padding: 0 15px;
+    }
+  }
+  &__link:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+  }
+}

@@ -1,0 +1,38 @@
+.slider{
+  height: 400px;
+  position: relative;
+  .navigation{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2.6rem;
+    padding:0 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    &__prev{
+      align-self: center;
+      z-index: 199;
+    }
+    &__next{
+      align-self: center;
+      z-index: 199;
+    }
+  }
+  .banner{
+    z-index: 1;
+    img{
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transform: scale(1.2);
+      height: 400px;
+    }
+  }
+}

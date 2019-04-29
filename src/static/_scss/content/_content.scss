@@ -1,0 +1,51 @@
+@import 'aside';
+@import 'product';
+
+.content{
+  max-width: 980px;
+  .catalog{
+    max-width: 100%;
+    margin-top: .5rem;
+    margin-left: 180px;
+    &__products{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pagination{
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      margin-top: 1.6rem;
+      margin-left: .6rem;
+        &__item{
+          cursor: pointer;
+          color: $greyText;
+          margin: 0 9px;
+          &.active{
+            color: #444444;
+            font-size: 1.2rem;
+          }
+        }
+    }
+    .info-footer{
+        color:$greyText;
+        font-size: .9rem;
+        margin-top: 3.7rem;
+        margin-left: 1.2rem;
+        border-top: solid 1px #777777;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5;
+        padding-bottom: 200px;
+        &__left{
+          margin-top: 1.6rem;
+          flex: 0 0 370px;
+        }
+        &__right{
+          margin-top: 1.6rem;
+          flex: 0 0 370px;
+        }
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+.modal-wrapper
+  .modal
+    span.modal__closeBtn 
+    form.modal__form.form(method='POST')
+      span.form__title Обратная связь
+      label(for='name') Ваше имя
+      input.from_name(type='text' )  
+      label(for='phone') Телефон
+      input.from__number(type='text' )  
+      label(for='email') Email
+      input.from__email(type='email' )
+      label(for='message') Сообщение
+      textarea.form__message
+      button.form__btn(type='submit') Отправить    

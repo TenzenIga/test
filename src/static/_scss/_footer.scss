@@ -1,0 +1,53 @@
+.footer{
+  font-family: $mainFont;
+  position: absolute;
+  padding-top: 45px;
+  background: $mainColor;
+  height: 220px;
+  color: #ffffff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  &__container{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+  }
+  &__info > span{
+    display: block;
+  }
+  &__menu{
+    margin-left: 9rem;
+    line-height: 1.2;
+    list-style: none;
+    font-size: 0.9rem;
+    li{
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+  }
+  &__logo{
+    margin-left: 18rem;
+    display: flex;
+    align-items: flex-start;
+    &__text > span{
+      display: block;
+    }
+    &__text{
+      .first-line{
+        position: relative;
+        text-decoration: underline;
+        &:after{
+          position: absolute;
+          top: 50%;
+          content:'';
+          margin-left: 4px;
+          width: 8px;
+          height: 1px;
+          background: #fff;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
